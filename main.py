@@ -35,7 +35,6 @@ def find_ace(whos_hand):
   ace_index = whos_hand.index(11)
   return ace_index
     
-
 new_game = True
 
 print(logo)
