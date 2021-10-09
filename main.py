@@ -35,6 +35,7 @@ def find_ace(whos_hand):
   ace_index = whos_hand.index(11)
   return ace_index
     
+
 new_game = True
 
 print(logo)
@@ -89,18 +90,18 @@ while new_game:
               show_hands()
 
           # Hand comparison to determine winner
-        elif sum(dealer_hand) > sum(player_hand):
-          print("Dealer wins!") 
-          game_over = True
-          show_hands()
-        elif sum(dealer_hand) == sum(player_hand):
-          print("It's a draw!")
-          game_over = True
-          show_hands()
-        elif sum(dealer_hand) < sum(player_hand):
-          print("Player wins!")
-          game_over = True  
-          show_hands()
+            elif sum(dealer_hand) > sum(player_hand):
+              print("Dealer wins!") 
+              game_over = True
+              show_hands()
+            elif sum(dealer_hand) == sum(player_hand):
+              print("It's a draw!")
+              game_over = True
+              show_hands()
+            elif sum(dealer_hand) < sum(player_hand):
+              print("Player wins!")
+              game_over = True  
+              show_hands()
 
     # Ends game or restarts
     else:
@@ -111,7 +112,7 @@ while new_game:
       elif play_again.lower() == "y":
         new_game = True
 
-  # If player chose 'n' at the initial invitation to play
+    # If player chose no at the initial invitation to play
   elif start.lower() == "n":
     new_game = False
     print("Have a nice day!")
